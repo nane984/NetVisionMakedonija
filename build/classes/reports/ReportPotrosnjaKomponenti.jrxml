@@ -1,0 +1,230 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<jasperReport xmlns="http://jasperreports.sourceforge.net/jasperreports" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://jasperreports.sourceforge.net/jasperreports http://jasperreports.sourceforge.net/xsd/jasperreport.xsd" name="report name" pageWidth="595" pageHeight="842" columnWidth="535" leftMargin="20" rightMargin="20" topMargin="20" bottomMargin="20" uuid="9af3605d-06ed-445b-8731-d74983773e9a">
+	<property name="ireport.zoom" value="1.9487171000000014"/>
+	<property name="ireport.x" value="0"/>
+	<property name="ireport.y" value="0"/>
+	<parameter name="kupac" class="java.lang.String"/>
+	<parameter name="gradiliste" class="java.lang.String"/>
+	<parameter name="vozac" class="java.lang.String"/>
+	<parameter name="brVozila" class="java.lang.String"/>
+	<parameter name="masinista" class="java.lang.String"/>
+	<parameter name="datumOd" class="java.lang.String"/>
+	<parameter name="vremeOd" class="java.lang.String"/>
+	<parameter name="markBetona" class="java.lang.String"/>
+	<parameter name="datumDo" class="java.lang.String"/>
+	<parameter name="vremeDo" class="java.lang.String"/>
+	<field name="r.b" class="java.lang.Object"/>
+	<field name="Otp.br" class="java.lang.Object"/>
+	<field name="0-4mm" class="java.lang.Object"/>
+	<field name="4-8mm" class="java.lang.Object"/>
+	<field name="8-16mm" class="java.lang.Object"/>
+	<field name="16-32mm" class="java.lang.String"/>
+	<field name="cement" class="java.lang.Object"/>
+	<field name="filer" class="java.lang.Object"/>
+	<field name="A1" class="java.lang.Object"/>
+	<field name="A2" class="java.lang.Object"/>
+	<field name="voda" class="java.lang.Object"/>
+	<background>
+		<band splitType="Stretch"/>
+	</background>
+	<title>
+		<band height="89" splitType="Stretch">
+			<staticText>
+				<reportElement x="25" y="3" width="56" height="20" uuid="de5f0534-8ddf-46a0-afad-fbab7fa4d3cf"/>
+				<text><![CDATA[Kupac:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="88" y="3" width="100" height="20" uuid="df4694c2-b4f2-450f-bb75-31e2e785ef2e"/>
+				<textFieldExpression><![CDATA[$P{kupac}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="25" y="23" width="56" height="20" uuid="8c738e71-6a0e-4aa6-9579-7ed0bec34f20"/>
+				<text><![CDATA[Gradilište:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="25" y="43" width="56" height="20" uuid="3839719a-4aaf-47df-ab72-37bb06f60b0a"/>
+				<text><![CDATA[Vozač:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="25" y="63" width="56" height="20" uuid="fb98d988-808c-4f8a-afc9-5622d1d037fc"/>
+				<text><![CDATA[Tablice:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="88" y="23" width="100" height="20" uuid="e7c91e24-c413-48e2-8716-e7d463296405"/>
+				<textFieldExpression><![CDATA[$P{gradiliste}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="88" y="43" width="100" height="20" uuid="91075d5b-0a20-4f7b-ac78-03404b2da75b"/>
+				<textFieldExpression><![CDATA[$P{vozac}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="88" y="63" width="100" height="20" uuid="cf8fe8b7-e754-4e71-8307-7b3e051308ec"/>
+				<textFieldExpression><![CDATA[$P{brVozila}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="235" y="3" width="69" height="20" uuid="4989177a-3887-4d8f-9ee4-5bb4762764df"/>
+				<text><![CDATA[Mašinista:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="235" y="23" width="69" height="20" uuid="5515bbb4-7976-413b-a4e6-f5437aaa151e"/>
+				<text><![CDATA[Datum od:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="235" y="43" width="69" height="20" uuid="43c446fc-d43a-464a-8607-ed11df8f68d5"/>
+				<text><![CDATA[Vreme od:]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="235" y="63" width="69" height="20" uuid="c97348b4-68db-42d6-a129-0fd2b2bebe96"/>
+				<text><![CDATA[Marka betona:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="321" y="3" width="81" height="20" uuid="57905fec-8668-475a-a912-af7c4f9c33e6"/>
+				<textFieldExpression><![CDATA[$P{masinista}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="321" y="23" width="81" height="20" uuid="7e8f46fa-206b-495a-a53d-c7a405c31f7f"/>
+				<textFieldExpression><![CDATA[$P{datumOd}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="322" y="43" width="80" height="20" uuid="04357f89-0e22-488a-9ee9-1af392d428df"/>
+				<textFieldExpression><![CDATA[$P{vremeOd}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="322" y="63" width="80" height="20" uuid="3a9bf6c0-f74c-44d7-85ee-08996dff216c"/>
+				<textFieldExpression><![CDATA[$P{markBetona}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="412" y="23" width="50" height="20" uuid="9ad81c7a-8771-4d34-8b45-12317b0614e5"/>
+				<text><![CDATA[Datum do:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="472" y="23" width="70" height="20" uuid="942fe347-80bb-4156-8493-cfe1bc26e194"/>
+				<textFieldExpression><![CDATA[$P{datumDo}]]></textFieldExpression>
+			</textField>
+			<staticText>
+				<reportElement x="412" y="43" width="50" height="20" uuid="c2d2099d-a832-460b-a24f-d2a910bc667b"/>
+				<text><![CDATA[Vreme do:]]></text>
+			</staticText>
+			<textField>
+				<reportElement x="472" y="44" width="70" height="20" uuid="f570280c-93e2-452d-8b4c-a546062bbb77"/>
+				<textFieldExpression><![CDATA[$P{vremeDo}]]></textFieldExpression>
+			</textField>
+		</band>
+	</title>
+	<pageHeader>
+		<band height="35" splitType="Stretch">
+			<staticText>
+				<reportElement x="219" y="13" width="102" height="12" uuid="a964fe32-0394-484f-9db1-b7fc91ca386c"/>
+				<textElement>
+					<font size="9" isBold="true"/>
+				</textElement>
+				<text><![CDATA[Potrosnja komponenti]]></text>
+			</staticText>
+		</band>
+	</pageHeader>
+	<columnHeader>
+		<band height="26" splitType="Stretch">
+			<staticText>
+				<reportElement x="0" y="1" width="40" height="19" uuid="cf022da7-415a-4fc0-9907-9efefb2c11eb"/>
+				<text><![CDATA[r.b]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="50" y="1" width="49" height="19" uuid="4618b18d-6435-4d75-bade-22018645bd37"/>
+				<text><![CDATA[Otp.br]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="111" y="1" width="40" height="19" uuid="e52c9200-f247-4fcb-91ae-e118c9eaba62"/>
+				<text><![CDATA[0-4mm]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="161" y="1" width="37" height="20" uuid="23c547d5-de31-4b37-8d1c-f7f4a8894bf1"/>
+				<text><![CDATA[4-8mm]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="208" y="1" width="41" height="20" uuid="f06bc3ba-cf9d-4b8e-867c-44dc401fbbc8"/>
+				<text><![CDATA[8-16mm]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="259" y="1" width="45" height="20" uuid="4b250b19-8579-4a8c-b695-48b3b262a7cc"/>
+				<text><![CDATA[16-32mm]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="314" y="1" width="39" height="20" uuid="03357f86-0dc0-4be6-8110-a0f63998ede0"/>
+				<text><![CDATA[cement]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="364" y="0" width="32" height="20" uuid="e5e63d92-a883-47f3-b5fd-fbbf9119a132"/>
+				<text><![CDATA[filer]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="412" y="1" width="31" height="20" uuid="b0121114-2716-401c-9a86-32b98a1066b3"/>
+				<text><![CDATA[A1]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="452" y="1" width="30" height="20" uuid="02e31195-d1b5-4a93-b88c-64476429de57"/>
+				<text><![CDATA[A2]]></text>
+			</staticText>
+			<staticText>
+				<reportElement x="500" y="1" width="52" height="20" uuid="4c9cb5c4-34ca-4dfc-94ed-b08d8055d52c"/>
+				<text><![CDATA[voda]]></text>
+			</staticText>
+		</band>
+	</columnHeader>
+	<detail>
+		<band height="32" splitType="Stretch">
+			<textField>
+				<reportElement x="-1" y="0" width="41" height="20" uuid="48273077-f353-40ab-a335-4b713883359b"/>
+				<textFieldExpression><![CDATA[""+$F{r.b}]]></textFieldExpression>
+			</textField>
+			<textField isBlankWhenNull="true">
+				<reportElement x="50" y="0" width="49" height="20" uuid="89528e82-1745-43c7-8882-2ee1f64fd608"/>
+				<textFieldExpression><![CDATA[""+$F{Otp.br}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="111" y="0" width="40" height="20" uuid="4a178538-ccdf-4731-9cf1-4a7caf90a412"/>
+				<textFieldExpression><![CDATA[""+$F{0-4mm}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="161" y="0" width="37" height="20" uuid="f4d584e8-5475-4795-a7e2-eb9cf91626af"/>
+				<textFieldExpression><![CDATA[""+$F{4-8mm}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="208" y="0" width="41" height="20" uuid="14c683ba-ab5b-42dc-87e4-51962b22d231"/>
+				<textFieldExpression><![CDATA[""+$F{8-16mm}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="259" y="0" width="45" height="20" uuid="b71d6281-0dba-45a9-a001-490fb3be20b3"/>
+				<textFieldExpression><![CDATA[$F{16-32mm}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="314" y="0" width="39" height="20" uuid="8ea87833-7e2a-42d1-ac18-5226cdf6bfec"/>
+				<textFieldExpression><![CDATA[""+$F{cement}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="364" y="0" width="32" height="20" uuid="f043221a-59ee-494d-a78f-007fc898f8f6"/>
+				<textFieldExpression><![CDATA[""+$F{filer}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="412" y="0" width="31" height="20" uuid="d2f41ecf-9e3c-4fa0-b28b-1e6bec674245"/>
+				<textFieldExpression><![CDATA[""+$F{A1}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="452" y="0" width="30" height="20" uuid="1c8470b2-f395-494a-82b3-acf5b6bc3008"/>
+				<textFieldExpression><![CDATA[""+$F{A2}]]></textFieldExpression>
+			</textField>
+			<textField>
+				<reportElement x="500" y="0" width="52" height="20" uuid="223933c6-514c-4ee8-b1e8-b6d30ae4e03a"/>
+				<textFieldExpression><![CDATA[""+$F{voda}]]></textFieldExpression>
+			</textField>
+		</band>
+	</detail>
+	<columnFooter>
+		<band height="45" splitType="Stretch"/>
+	</columnFooter>
+	<pageFooter>
+		<band height="54" splitType="Stretch"/>
+	</pageFooter>
+	<summary>
+		<band height="42" splitType="Stretch"/>
+	</summary>
+</jasperReport>

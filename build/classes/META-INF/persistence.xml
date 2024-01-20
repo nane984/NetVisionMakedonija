@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<persistence version="2.1" xmlns="http://xmlns.jcp.org/xml/ns/persistence" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://xmlns.jcp.org/xml/ns/persistence http://xmlns.jcp.org/xml/ns/persistence/persistence_2_1.xsd">
+  <persistence-unit name="NetVisionKraljevoPU" transaction-type="RESOURCE_LOCAL">
+    <provider>org.eclipse.persistence.jpa.PersistenceProvider</provider>
+    <class>Db.Specbetona</class>
+    <class>Db.Regtablice</class>
+    <class>Db.Korisnik</class>
+    <class>Db.Interfcement</class>
+    <class>Db.K</class>
+    <class>Db.Otpremnica</class>
+    <class>Db.Masinista</class>
+    <class>Db.Komponente</class>
+    <class>Db.Interfreceptura</class>
+    <class>Db.Interfmesalica</class>
+    <class>Db.Vrstacementa</class>
+    <class>Db.Vozackamion</class>
+    <class>Db.Interfvoda</class>
+    <class>Db.Aditiv2</class>
+    <class>Db.Kupac</class>
+    <class>Db.Rucnirad</class>
+    <class>Db.Interfaditiv</class>
+    <class>Db.Konzbetona</class>
+    <class>Db.Gradiliste</class>
+    <class>Db.Interfagregat</class>
+    <class>Db.Aditiv1</class>
+    <class>Db.Standbetona</class>
+    <class>Db.Interfdisplej</class>
+    <class>Db.Vozaci</class>
+    <class>Db.Aditiv3</class>
+    <class>Db.Vrstacementa2</class>
+    <class>Db.Filer</class>
+    <class>Db.Sertifikat</class>
+    <class>Db.Zrnomax</class>
+    <class>Db.Svostva</class>
+    <class>Db.Svojstva</class>
+    <properties>
+      <property name="javax.persistence.jdbc.url" value="jdbc:postgresql://localhost:5432/betonara_db"/>
+      <property name="javax.persistence.jdbc.user" value="postgres"/>
+      <property name="javax.persistence.jdbc.driver" value="org.postgresql.Driver"/>
+      <property name="javax.persistence.jdbc.password" value="beton0602984"/>
+    </properties>
+  </persistence-unit>
+</persistence>
